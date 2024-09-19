@@ -1,1 +1,11 @@
-spring.application.name=library
+spring:
+  datasource:
+    url: jdbc:postgresql://212.132.97.24:5432/azhenishova
+    username: azhenishova
+    password: ZKp0EruR5MeRPszE
+  jpa:
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
