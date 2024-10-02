@@ -1,0 +1,17 @@
+[33mcommit 2a8e2bc636a81ac42c97aedb11a9bd0478af110c[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Aiperi <zhenishovaaiperi@gmail.com>
+Date:   Tue Oct 1 22:41:54 2024 +0600
+
+    add Reader controller, DTO, Reader Entiry, Reader Repository
+
+[33mcommit 48bc3c06ad4a80c430308f3e44fb42f267dfbb1c[m
+Author: Aiperi <zhenishovaaiperi@gmail.com>
+Date:   Thu Sep 19 22:35:24 2024 +0600
+
+    commit
+
+[33mcommit f6666d42b44ae682c934c94f84cc59abe7febc7e[m
+Author: Aiperi <zhenishovaaiperi@gmail.com>
+Date:   Thu Sep 19 22:18:33 2024 +0600
+
+    I added controllers, entities, repositories

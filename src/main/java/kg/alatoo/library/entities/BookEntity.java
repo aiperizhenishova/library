@@ -7,6 +7,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDateTime;
+
 
 @Entity
 @Table
@@ -22,4 +24,11 @@ public class BookEntity {
     private Integer releasedYear;
     private String author;
     private String genre;
+
+    @ManyToOne
+    private ReaderEntity reader;
+
+    private LocalDateTime returnDate;
+
+
 }
