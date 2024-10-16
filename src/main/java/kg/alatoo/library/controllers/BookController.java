@@ -17,6 +17,11 @@ public class BookController {
     @Autowired
     private BookRepository bookRepository;
 
+    @GetMapping("get/{id}")
+    public BookEntity getById(@PathVariable("id") Long id){
+        return bookRepository.findById(id).orElseThrow(() -> new ApiException("Book " + id + " not found", HttpStatusCode.valueOf(404)));
+    }
+
     @GetMapping("/get-all")
     public List<BookEntity> getAll(){
         return bookRepository.findAll();

@@ -1,5 +1,6 @@
 package kg.alatoo.library.controllers;
 
+import jakarta.validation.Valid;
 import kg.alatoo.library.dto.BookCheckOut;
 import kg.alatoo.library.dto.BookOverdueDto;
 import kg.alatoo.library.dto.BookReturnDto;
@@ -21,7 +22,7 @@ public class ManagementController {
     private ManagementService managementService;
 
     @PostMapping("/check-out-book")
-    public SuccessDto checkOutBook (@RequestBody BookCheckOut bookCheckOut){
+    public SuccessDto checkOutBook (@RequestBody @Valid BookCheckOut bookCheckOut){
         return new SuccessDto(managementService.checkOutUser(bookCheckOut));
     }
 
