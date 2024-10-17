@@ -1,7 +1,7 @@
 package kg.alatoo.library.components;
 
 
-import kg.alatoo.library.exception.ApiException;
+import kg.alatoo.library.exceptions.ApiException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
